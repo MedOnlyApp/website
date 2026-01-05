@@ -1,0 +1,699 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Source Serif 4", sans-serif;
+    /* background-color: #B71C1C; */
+    background-color: #565828;
+    margin: 2.5vh 2.5vw;
+}
+
+body > div:first-child {
+    color: #333;
+    background-color: #ffffff;
+    border-radius: 10px;
+    
+    z-index: 1;
+    position: relative;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    /* color: #D32F2F; */
+    color: #565828 !important;
+}
+
+h6 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #565828;
+}
+
+.btn-red {
+    background-color: #565828;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-red:hover {
+    background-color: #f5f7a9;
+    color: #c3aaaa;
+}
+
+.card {
+    border-radius: 25px; /* Plus arrondi */
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.399);
+    border: none;
+    min-width: fit-content;
+}
+
+.service-icon {
+    color: #D32F2F;
+    font-size: 48px;
+}
+
+.cta-section {
+    background-image: url("aider-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    /* padding: 60px 0; */
+    text-align: center;
+    position: relative;
+
+}
+
+.cta-section > .container {
+    background-color: #edef9f4b;
+    min-height: 500px;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    padding: 60px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta-section > .container > h1 {
+    color: white;
+}
+
+.cta-section > .container > p {
+    color: white;
+    text-align: center;
+    font-size: clamp(16px, 1.5vw, 20px);
+}
+
+.testimonial-card {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.update-img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0; /* Ajusté pour correspondre à l'arrondi des cartes */
+}
+
+.good-news {
+    background-color: #D32F2F;
+    color: white;
+    padding: 60px 0;
+}
+
+.contact-form input, .contact-form textarea {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.navbar {
+    /* width: 95vw; */
+    margin: 30px 2.5vw;
+    border-radius: 50px; /* Bords arrondis à 50% interprété comme 50px border-radius pour une navbar en forme de pilule */
+    background-color: rgba(255, 255, 255, 0.543);
+    backdrop-filter: blur(10px);
+    height: 74px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #565828 !important;
+}
+
+.nav-link {
+    color: #333 !important;
+}
+
+.nav-link:hover {
+    color: #D32F2F !important;
+}
+
+.navbar-nav {
+    flex: 1;
+    justify-content: center;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.hero {
+    /* background-image: url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80'); */
+    /* background-image: url('skin-care.webp'); */
+    background-image: url('Dermatologie-esthétique.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 97.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+    z-index: 0;
+    background-color: white;
+
+    /* box-shadow: inset 0px -20px 20px white; */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: rgba(255, 255, 255, 0.3); */
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+    color: black;
+}
+
+.hero > .container > h1 {
+    font-size: clamp(30px, 6vw, 6vw);
+    background: radial-gradient(#ff9d9d, #565828);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    animation: text_color 10s ease-in-out infinite;
+}
+
+@keyframes text_color {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.hero > .container > p {
+    font-weight: bold;
+    font-size: large;
+    color: rgba(0, 0, 0, 0.482);
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 50px 0 0 20px !important;
+
+    /* background-image: url("background.png");
+    background-color: transparent;
+    background-position: center;
+    background-size: cover; */
+
+    /* background: linear-gradient(to right, red, blue); */
+    /* background-size: 100% 100%; */
+    /* background-clip: text; */
+    /* -webkit-background-clip: text; */
+    /* color: transparent; */
+    /* -webkit-text-fill-color: transparent; */
+}
+
+/* #about > div:last-child {
+    box-shadow: inset 20px 20px 15px rgb(255, 255, 255);
+    background-image: url("doctor.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    height: 500px;
+} */
+
+#about > div:last-child > img {
+    height: 500px;
+    /* z-index: 4; */
+    filter: drop-shadow(-50px 50px 5px rgba(0, 0, 0, 0.616));
+    /* box-shadow: inset 10px -10px 30px rgb(255, 255, 255); */
+}
+
+#about > .container > h1 {
+    background: linear-gradient(to bottom, #565828,#ff9d9d,#ff9d9d, #565828);
+    background-size: 100% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    /* animation: text_color 5s ease-in-out infinite; */
+}
+
+#about > .container > div {
+    display: block;
+    height: 100%;
+}
+
+#about > .container > div > div {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+#about > .container > div > div > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#about > .container > div > div > div > div {
+    min-width: 180px;
+    flex: 1;
+}
+
+/* #services > .container > div > div:first-child { */
+#services > .container > div > div:nth-child(1) > div {
+    background-image: url("Soins-médicaux-de-la-peau.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#services > .container > div > div:nth-child(2) > div {
+    background-image: url("Dermatologie-pédiatrique.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#services > .container > div > div:nth-child(3) > div {
+    background-image: url("Dermatologie-esthétique.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#services > .container > div > div:nth-child(4) > div {
+    background-image: url("Dépistage.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#services > .container > div > div:nth-child(5) > div {
+    background-image: url("Conseils-personnalisés.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#services > .container > div > div > div > div {
+    background-color: #ffffff89;
+    border-radius: 25px;
+}
+
+#contact {
+    background-color: white;
+}
+
+#contact > .container > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#contact > .container > div > div:last-child {
+    flex: 1;
+}
+
+#contact > .container > div > div:last-child > div > div > h4 {
+    text-align: center;
+}
+
+#contact > .container > div > div:last-child > div > div > p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#contact > .container > div > div:last-child > div > div > p > span {
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    box-shadow: 0 0 5px black;
+    flex: 1;
+
+    text-align: center;
+
+    min-width: fit-content;
+}
+
+.contact-form {
+    max-width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    margin-bottom: 100px;
+}
+
+.contact-form label {
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.contact-form > button {
+    background: #565828; /* doctor blue */
+    color: white;
+    padding: 12px;
+    font-size: 17px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.contact-form > button:hover {
+    background: #f0f1ba;
+    transition: 0.3s;
+}
+
+.video {
+    display: flex;
+    align-items: center;
+    /* z-index: 10; */
+    position: relative;
+    /* max-height: 500px; */
+    overflow: hidden;
+}
+
+.video > video {
+    width: 100%;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.video > div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #e1e48c59;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.video > div > h1 {
+    color: white;
+    text-align: center;
+}
+
+.video > div > p {
+    font-size: clamp(16px, 1.5vw, 20px);
+    color: white;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 0 0 10px 10px;
+}
+
+footer > div:first-child {
+    width: 100%;    
+}
+
+footer > div:first-child > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+
+    padding: 0;
+}
+
+footer > div:first-child > ul > li {
+    float: left;
+}
+
+footer > div:first-child > ul > li > a {
+    text-decoration: none;
+}
+
+footer > div:last-child {
+    width: 100%;
+}    
+
+footer > div:last-child > p {
+    color: rgba(153, 153, 153, 0.734);
+    font-size: 15px;
+    text-align: center;
+}    
+
+footer > div:last-child > p > a {
+    color: rgba(153, 153, 153, 0.734);
+}    
+
+#localisation {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 0;
+}
+
+#localisation > div {
+    border-radius: 25px;
+    border: 3px solid white;
+    width: 80%;
+    height: 200px;
+
+    box-shadow: 0 0 50px white;
+}
+
+#localisation > div > iframe {
+    border-radius: 22px;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .hero {
+        background-size: 300%;
+        background-position: 60% 100%;
+        height: 700px;
+    }
+
+    .hero > .container > p {
+        font-size: clamp(17px, 4vw, 4vw);
+        
+    }
+
+}
+
+@media only screen and (max-width: 470px) {
+
+    .navbar-brand > span {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 438px) {
+    
+    #contact > .container > div h4 {
+        text-align: center;
+    }
+
+    #contact > .container > div p {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    
+    #contact > .container > div > div {
+        flex: 1;
+    }
+
+    /* .hero {
+        background-size: 10% 100%;
+        background-position: 0% 100%;
+    } */
+
+}
+
+@media only screen and (max-width: 993px) {
+    .navbar > div > a, .navbar > div > button {
+        height: 60px;
+        
+    }
+
+    .navbar > div > a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    #navbarNav {
+        background-color: rgb(255, 255, 255);
+        backdrop-filter: blur(10px);
+        text-align: center;
+        box-sizing: border-box;
+        padding: 20px 0;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (max-width: 1070px) {
+    #about {
+        flex-direction: column;
+    }
+
+    #about > div:last-child {
+        display: flex;
+        justify-content: center;
+    }
+
+    #about > .container > div > div {
+        gap: 30px;
+    }
+
+    #about > .container > div > div > p {
+        text-align: center;
+    }
+}
+
+/* @media only screen and (max-width: 500px) {
+    
+    .hero {
+        background-size: 100%;
+        background-position: 50% 100%;
+    }
+
+} */
+
+/* @media only screen and (max-width: 1000px) {
+    
+    .hero {
+        background-size: cover;
+        background-position: 50% 100%;
+    }
+
+} */
+
+@media only screen and (max-width: 800px) {
+    /* body {
+        margin: 20px 2.5vw;
+    } */
+    /* body > div:first-child {
+        margin: 20px 2.5vw; 
+    } */
+    /* .navbar {
+        margin: 30px 2.5vw;
+        height: 74px;
+        background-color: rgba(255, 255, 255, 0.543);
+        padding: 0;
+    } */
+    /* .navbar-brand {
+        font-size: 1.5rem; 
+    } */
+    /* .navbar-nav {
+        justify-content: center;
+    } */
+    /* .btn-red.ms-3 {
+        margin-left: 1rem !important; 
+        margin-top: 0;
+        width: auto;
+    } */
+
+   
+    /* #about {
+        flex-direction: column;
+        padding: 50px 0 0 20px !important;
+    } */
+
+    /* #about > div:last-child {
+        order: initial;
+        margin-bottom: 0;
+    } */
+
+    /* #about > div:last-child > img {
+        height: 500px;
+    } */
+
+    /* #about > .container > div > div {
+        width: 90%;
+        gap: 100px;
+    } */
+
+    
+    /* .video {
+        flex-direction: row; 
+    } */
+    /* .video > video {
+        width: 50%;
+        margin-bottom: 0;
+    } */
+
+    
+    /* #contact .row > div {
+        width: 50%; 
+    } */
+    /* #contact > .container > div > div:last-child > div > div > p {
+        flex-direction: row; 
+        gap: 0;
+    } */
+    /* #contact > .container > div > div:last-child > div > div > h4 {
+        text-align: left;
+    } */
+
+    
+    /* #localisation > div {
+        width: 80%; 
+        height: 450px;
+    } */
+}
+
