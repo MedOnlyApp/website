@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Imane Zoubir - Dermatologie Médico-Chirurgicale & Ésthétique</title>
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <div>
+        <!-- En-tête/Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <a class="navbar-brand" href="#">
+                    <img src="logo.png" alt="" style="width: 80px;">
+                    <!-- <span style="color: #D32F2F;">♥</span>  -->
+                    Dr. Imane Zoubir
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#hero">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="#about">À Propos</a></li> -->
+                        <!-- <li class="nav-item"><a class="nav-link" href="#updates">Actualités</a></li> -->
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/p/Cabinet-Dr-Zoubir-imane-de-dermatologiem%C3%A9decine-esth%C3%A9tique-et-laser-oujda--100027452180534/" target="_blank"><img src="facebook-circular-logo.png" alt="" style="width: 25px;"></a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="#appointment">Prendre Rendez-vous</a></li> -->
+                    </ul>
+                    <a href="#appointment" class="btn btn-red ms-3">Prendre Rendez-vous</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Section Héros -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <h1 class="display-8">Peau Saine, Beauté Durable</h1>
+                <p class="">Dédié à la santé et à la beauté de votre peau, notre cabinet de dermatologie vous accompagne dans la prévention, le diagnostic et le traitement des affections cutanées. Des soins de routine aux traitements spécialisés.</p>
+                <div class="mt-4">
+                    <a href="#appointment" class="btn btn-red btn-lg me-3">Prendre Rendez-vous</a>
+                    <!-- <a href="#services" class="btn btn-outline-light btn-lg">En Savoir Plus</a> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Section À Propos du Docteur -->
+        <section id="about" class="py-5">
+            <div class="container">
+                <h1 class="text-center mb-5">À Propos du Dr. Imane Zoubir</h1>
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <p><b>Dr. Imane Zoubir</b> est une dermatologue certifiée avec plus de 15 ans d'expérience, spécialisée dans les soins médicaux et esthétiques de la peau. Mission : Fournir des soins personnalisés et attentionnés pour aider les patients à maintenir une peau saine et éclatante.</p>
+                        <div class="row mt-4">
+                            <div class="col-4 text-center">
+                                <div class="card p-3">
+                                    <h6>15+ Ans</h6>
+                                    <p>Expérience</p>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center">
+                                <div class="card p-3">
+                                    <h6>10 000+</h6>
+                                    <p>Patients Soignés</p>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center">
+                                <div class="card p-3">
+                                    <h6>98%</h6>
+                                    <p>Taux de Réussite</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div>
+                <img src="doctor.png" alt="">
+            </div>
+        </section>
+
+        <!-- <section class="video">
+            <div style="position: relative; width: 100%; height: 800px;">
+                <img id="posterOverlay" src="cabinet-1.webp" 
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+                            object-fit: cover; transition: opacity 1s;">
+            </div>
+
+            <script>
+                function changePoster(newSrc) {
+                    const overlay = document.getElementById('posterOverlay');
+                    // Fade out
+                    overlay.style.opacity = 0;
+                    
+                    setTimeout(() => {
+                        // Change image
+                        overlay.src = newSrc;
+                        // Fade in
+                        overlay.style.opacity = 1;
+                    }, 1000); // duration matches CSS transition
+                }
+
+                let liste = ["cabinet-1.webp", "cabinet-2.webp", "cabinet-3.webp", "cabinet-4.webp", "cabinet-5.webp"]
+                let i = 1
+                setInterval( () => {
+                    changePoster(liste[i])
+                    i += 1
+                    if ( i == 5 )
+                        i = 0
+                }, 4000)
+            </script>
+
+            <div>
+                <h1>Bienvenue dans notre cabinet médical</h1>
+                <p>Nous vous accueillons dans un cabinet moderne et confortable. <br> Des soins de qualité, une écoute attentive.</p>
+            </div>
+        </section>
+ -->
+        <!-- Section Services -->
+        <section id="services" class="py-5 bg-light">
+            <div class="container">
+                <h1 class="text-center mb-5">Nos Services</h1>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <!-- <div class="service-icon mb-3">🩺</div> -->
+                                <h5 class="card-title">Soins médicaux de la peau</h5>
+                                <p class="card-text">Diagnostic traitement maladies cutanées pour restaurer santé et confort durable.</p>
+                                <!-- <a href="#" class="text-decoration-none">En Savoir Plus</a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <!-- <div class="service-icon mb-3">❤️</div> -->
+                                <h5 class="card-title">Dermatologie pédiatrique</h5>
+                                <p class="card-text">Prend en charge affections cutanées infantiles avec soins doux adaptés.</p>
+                                <!-- <a href="#" class="text-decoration-none">En Savoir Plus</a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <!-- <div class="service-icon mb-3">📊</div> -->
+                                <h5 class="card-title">Dermatologie esthétique</h5>
+                                <p class="card-text">Améliore apparence cutanée, corrige imperfections, préserve jeunesse et harmonie naturelle.</p>
+                                <!-- <a href="#" class="text-decoration-none">En Savoir Plus</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <!-- <div class="service-icon mb-3">🔬</div> -->
+                                <h5 class="card-title">Dépistage et suivi</h5>
+                                <p class="card-text">Surveille peau, dépiste anomalies précocement, assure suivi médical régulier sécurisé.</p>
+                                <!-- <a href="#" class="text-decoration-none">En Savoir Plus</a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <!-- <div class="service-icon mb-3">💡</div> -->
+                                <h5 class="card-title">Conseils personnalisés</h5>
+                                <p class="card-text">Recommandations adaptées à votre peau pour soins quotidiens efficaces durables.</p>
+                                <!-- <a href="#" class="text-decoration-none">En Savoir Plus</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section CTA Rendez-vous -->
+        <section class="cta-section">
+            <div class="container">
+                <h1>Comment Pouvons-Nous Vous Aider ?</h1>
+                <p>Planifiez une consultation pour des conseils dermatologiques personnalisés, de la prévention au traitement. Notre équipe est là pour accompagner votre santé cutanée.</p>
+                <a href="#appointment" class="btn btn-light btn-lg">Consultez Notre Docteur</a>
+            </div>
+        </section>
+
+        <!-- Section Dernières Actualités Médicales -->
+        <!-- <section id="updates" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Dernières Actualités Médicales</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="update-img" alt="Actualité">
+                            <div class="card-body">
+                                <h5 class="card-title">Prévenir les Maladies Cardiaques par l'Alimentation</h5>
+                                <p class="card-text">Conseils pour un mode de vie sain pour le cœur.</p>
+                                <a href="#" class="text-decoration-none">Lire Plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="update-img" alt="Actualité">
+                            <div class="card-body">
+                                <h5 class="card-title">Nouveaux Traitements pour l'Insuffisance Cardiaque</h5>
+                                <p class="card-text">Derniers progrès en cardiologie.</p>
+                                <a href="#" class="text-decoration-none">Lire Plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="update-img" alt="Actualité">
+                            <div class="card-body">
+                                <h5 class="card-title">Conseils de Mode de Vie pour une Meilleure Santé Cardiaque</h5>
+                                <p class="card-text">Conseils sur l'exercice et la gestion du stress.</p>
+                                <a href="#" class="text-decoration-none">Lire Plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Section Bonne Nouvelle -->
+        <!-- <section class="good-news">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h2>Célébrer les Histoires de Réussite</h2>
+                        <p>Les rétablissements de nos patients nous inspirent chaque jour. Des pontages aux soins préventifs, nous nous engageons à des cœurs heureux et sains.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="img-fluid rounded" alt="Bonne Nouvelle">
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Section Contact -->
+        <section id="contact" class="py-5">
+            <div class="container">
+                <h1 class="text-center mb-5">Contactez-Nous</h1>
+
+                <form action="https://formsubmit.co/mohamed.rouane.work@gmail.com" method="POST" class="contact-form">
+                    <label for="name">Nom complet</label>
+                    <input type="text" id="name" name="name" placeholder="Entrez votre nom complet" required>
+
+                    <label for="phone">Numéro de téléphone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Entrez votre numéro" required>
+
+                    <label for="message">Comment puis-je vous aider ?</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Décrivez votre besoin" required></textarea>
+
+                    <button type="submit">Envoyer</button>
+                </form>
+
+                <div class="">
+                    
+                    <div class="">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold">Téléphone</h4>
+                                <p class="card-text">05366-84645</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold">Email</h4>
+                                <p class="card-text">Imane.zoubir@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold">Heures d'Ouverture</h4>
+                                <p class="card-text"><span class="card-span"> Lundi-Vendredi : 8h-18h</span> <span class="card-span"> Samedi : 9h-14h</span> <span class="card-span">Dimanche : Fermé</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Prendre Rendez-vous -->
+        <section id="appointment" class="py-5 bg-light">
+            <div class="container">
+                <h1 class="text-center mb-5">Prendre Rendez-vous</h1>
+                <div class="row justify-content-center">
+                        <!-- Calendly inline widget begin -->
+                        <div class="calendly-inline-widget" data-url="https://calendly.com/mohamed-rouane-23-ump/30min" style="min-width:320px;height:700px;"></div>
+                        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                        <!-- Calendly inline widget end -->
+                </div>
+            </div>
+        </section>
+
+        <section id="localisation">
+            <h1>Localisation</h1>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13124.84399830061!2d-1.9326181!3d34.6746238!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd786522936a82d5%3A0x5ed397a16cf42415!2sCabinet%20de%20Dermatologie%20M%C3%A9dico-Chirurgicale%20%26%20%C3%89sth%C3%A9tique%20Dr.%20imane%20Zoubir!5e0!3m2!1sen!2sma!4v1770474765538!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+
+    </div>
+
+    <footer>            
+        
+        <div class="row-links mt-2 mb-3">
+            <ul class="row-links-soc">
+                <li class="row-links-soc-item mbr-fonts-style display-7">
+                    <a href="#hero" class="text-white">Accueil</a>
+                </li>
+                <li class="row-links-soc-item mbr-fonts-style display-7">
+                    <a href="#services" class="text-white">Services</a>
+                </li>
+                <li class="row-links-soc-item mbr-fonts-style display-7">
+                    <a href="#" class="text-white">Contact</a>
+                </li></ul>
+        </div>
+        
+        <div class="col-12 col-lg-6 center mt-2 mb-3">
+            <p class="mbr-fonts-style copyright mb-0 display-7">© 2025 Dr. Imane Zoubir. All rights reserved. Made By <a href="">Mohamed Rouane</a></p>
+        </div>
+                
+
+    </footer>
+
+</body>
+
+</html>
