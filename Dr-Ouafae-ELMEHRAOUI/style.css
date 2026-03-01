@@ -1,0 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body { 
+    font-family: 'Inter', sans-serif; 
+}
+
+.medical-gradient { 
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); 
+}
+
+.image > div {
+    background-image: url('endocrinologist-examining-thyroid-gland-patient-light-grey-background-closeup_495423-64623.avif');
+}
+
+@media only screen and (max-width: 420px) {
+    nav > div > div:first-child {
+        font-size: 4vw;
+    }
+    nav > div > a {
+        font-size: 4vw;
+    }
+}
