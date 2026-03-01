@@ -10,7 +10,7 @@ body {
 }
 
 .image > div {
-    background-image: url('endocrinologist-examining-thyroid-gland-patient-light-grey-background-closeup_495423-64623.avif');
+    background-image: url('endocrinologist-examining-thyroid-gland-patient-light-grey-background-closeup_495423-64623.jpg');
 }
 
 @media only screen and (max-width: 420px) {
@@ -20,4 +20,5 @@ body {
     nav > div > a {
         font-size: 4vw;
     }
+
 }
